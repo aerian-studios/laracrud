@@ -1,0 +1,24 @@
+{
+    "name": "aerian/laracrud",
+    "description": "",
+    "keywords": [],
+    "homepage": "www.aerian.com",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Simon Neaves",
+            "email": "simon@aerian.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "require-dev": {
+    },
+    "autoload": {
+        "psr-4": {
+            "Aerian\\Laracrud\\": "src/Aerian/Laracrud"
+        }
+    },
+    "minimum-stability": "dev"
+}
