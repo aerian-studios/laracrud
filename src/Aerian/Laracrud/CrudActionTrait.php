@@ -57,9 +57,11 @@ trait CrudActionTrait
         array_unshift($selectColumns, $key);
 
         $rows = $this->_model->limit($limit)->offset($offset)->get($selectColumns)->keyBy($key);
+        $listColumns = $this->_model->getListColumns());
 
         return [
-            'columns' => $this->_model->getListColumns(),
+            'columnsIds' => array_keys($listColumns),
+            'columns' => $listColumns,
             'itemIds' => $rows->pluck($key),
             'items' => $rows
         ];
